@@ -65,8 +65,11 @@ void loop(){
    setsec();
    }
    if(menu==4){
-    menu = 0;
-    }
+    timeDisplay();
+   }
+   if(menu==5){
+     menu=0;
+   }
     delay(100);
 }
 
@@ -82,6 +85,16 @@ void Menu(){
   lcd.print("3.second");
 
  }
+ void timeDisplay(){
+  lcd.clear();
+  lcd.setCursor(4,2);
+  lcd.print(Rhour);
+  lcd.print(":");
+  lcd.print(Rmin);
+  lcd.print(":");
+  lcd.print(Rsec);
+  delay(100);
+}
 void sethour(){
   lcd.clear();
     lcd.setCursor(7,0);
