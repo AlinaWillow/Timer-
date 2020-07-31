@@ -1,2 +1,2 @@
-# Timer-
+# Timer
 Set time (hour,minute,seccond)
